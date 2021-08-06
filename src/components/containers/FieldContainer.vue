@@ -1,36 +1,34 @@
 <template>
-  <div>
-    <div class="container">
-      <label class="section-title">{{schema.title}}</label>
-      <div :style="fieldWrapperStyles">
-        <template v-for="(fieldSchema, key) in schema.properties">          
-          <div class="field" v-if="fieldSchema.items" :key="key">
-            <label>{{fieldSchema.title}}</label>
-            <component 
-              v-for="item in fieldSchema.items"
-              :is="getFieldName(fieldSchema)" 
-              :key="item.value" 
-              :schema="fieldSchema" 
-              :item="item"
-              :value="value[key]"
-              @input="emitChange($event, value, key)"
-              :selfKey="item.value">
-            </component>       
-          </div>  
-          <div class="field" v-else :key="key">
-            <label v-if="fieldSchema.dataType !== 'object'">{{fieldSchema.title}}</label>
-            <component         
-              :is="getFieldName(fieldSchema)"           
-              :schema="fieldSchema" 
-              class="field" 
-              :value="value[key]"
-              @input="emitChange($event, value, key)"
-              :selfKey="key">
-            </component>
-          </div>     
-        </template>   
-      </div>
-    </div>
+  <div v-if="isReady" class="container">
+    <label class="section-title">{{schema.title}}</label>
+    <div :style="fieldWrapperStyles">
+      <template v-for="(fieldSchema, key) in schema.properties">          
+        <div class="field" v-if="fieldSchema.items" :key="key">
+          <label>{{fieldSchema.title}}</label>
+          <component 
+            v-for="item in fieldSchema.items"
+            :is="getFieldName(fieldSchema)" 
+            :key="item.value" 
+            :schema="fieldSchema" 
+            :item="item"
+            :value="value[key]"
+            @input="emitChange($event, value, key)"
+            :selfKey="item.value">
+          </component>       
+        </div>  
+        <div class="field" v-else :key="key">
+          <label v-if="fieldSchema.dataType !== 'object'">{{fieldSchema.title}}</label>
+          <component         
+            :is="getFieldName(fieldSchema)"           
+            :schema="fieldSchema" 
+            class="field" 
+            :value="value[key]"
+            @input="emitChange($event, value, key)"
+            :selfKey="key">
+          </component>
+        </div>     
+      </template>   
+    </div>    
   </div>
 </template>
 
@@ -52,7 +50,7 @@ export default {
     SelectList,
     Checkbox
   },  
-  props: {
+  props: {    
     schema: {
       type: Object,
       default() {
@@ -66,31 +64,24 @@ export default {
       }
     }
   },
+  // Only the first FieldContainer will have a value of true for isRootFormContainer  
   provide: {
-    isFormRoot: false
+    isRootFormContainer: false
   },  
   inject: {
-    isFormRoot: { default: true }
+    isRootFormContainer: { default: true }
   },
   data() {
     return {
-     isRootContainer: false
+     isRootFormContainer: false,    
+
+     // Use isReady to wait for certain conditions to be met before loading the form 
+     // Ex: wait for validation of schema/building of form data object before loading form elements
+     isReady: false  
     }
-  },
+  }, 
 
-  created() {
-  },
-
-  computed: {
-    // val: {
-    //   get() {
-    //     return this.formData
-    //   },
-    //   set(newVal) {
-    //     console.log('container received val changed', newVal)
-    //     this.$emit('input', newVal)
-    //   }
-    // },
+  computed: {    
     fieldWrapperStyles() {
       let styles = ''
 
@@ -99,25 +90,7 @@ export default {
       }
 
       return styles
-    },
-    // containerStylesOuter() {
-    //   let styles = ''
-
-    //   if (this.schema.styles && this.schema.styles.containerStylesOuter) {
-    //     styles = this.schema.styles.containerStylesOuter
-    //   }
-
-    //   return styles
-    // },
-    // containerStylesInner() {
-    //   let styles = ''
-
-    //   if (this.schema.styles && this.schema.styles.containerStylesInner) {
-    //     styles = this.schema.styles.containerStylesInner
-    //   }
-
-    //   return styles
-    // }
+    }    
   },
 
   methods: {

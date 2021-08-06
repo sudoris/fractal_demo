@@ -1,8 +1,19 @@
-import Vue from 'vue'
-import App from './App.vue'
+// Plugin export
+import FormLoader from './components/FormLoader.vue'
+import FieldContainer from './components/containers/FieldContainer.vue'
+import * as fields from './components/fieldsLoader'
 
-Vue.config.productionTip = false
+const Fractal = {
+  install(Vue) {
+    const components = {FieldContainer, ...fields}
+    Vue.component('FormLoader', FormLoader)
+    function registerField(name) {
+      Vue.component(name, components[name])
+    }
+    for (let component in components) {
+      registerField(component)
+    }
+  }  
+}
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export default Fractal
