@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build-lib": "vue-cli-service build --target lib --name fractal src/main.js"
+    "build": "vue-cli-service build --target lib --name Fractal src/main.js",
+    "lint": "vue-cli-service lint"
   },  
   "dependencies": {
     "core-js": "^3.6.5",
     "lodash": "^4.17.21",
     "vue": "^2.6.11"
   },
+  "main": "./dist/fracta.common.js",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
