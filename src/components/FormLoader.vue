@@ -23,7 +23,7 @@
 </template>
 
 <script>
-// import FieldContainer from './containers/FieldContainer.vue'
+import FieldContainer from './containers/FieldContainer.vue'
 
 import _cloneDeep from 'lodash/cloneDeep'
 
@@ -91,9 +91,9 @@ import _cloneDeep from 'lodash/cloneDeep'
 
 export default {
   name: 'FormLoader',
-  // components: {   
-  //   FieldContainer
-  // },
+  components: {   
+    FieldContainer
+  },
   props: {    
     schema: {
       type: Object,
