@@ -81,6 +81,10 @@ export default {
     }
   }, 
 
+  created() {
+    this.isReady = true
+  },
+
   computed: {    
     fieldWrapperStyles() {
       let styles = ''
