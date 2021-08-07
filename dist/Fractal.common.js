@@ -524,17 +524,6 @@ module.exports = isMasked;
 
 /***/ }),
 
-/***/ "1939":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormLoader_vue_vue_type_style_index_0_id_30a62196_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("2daa");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormLoader_vue_vue_type_style_index_0_id_30a62196_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FormLoader_vue_vue_type_style_index_0_id_30a62196_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
-
-
-/***/ }),
-
 /***/ "1a2d":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -988,13 +977,6 @@ module.exports = arrayFilter;
 
 /***/ }),
 
-/***/ "2daa":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "2dcb":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1423,6 +1405,17 @@ function baseClone(value, bitmask, customizer, key, object, stack) {
 }
 
 module.exports = baseClone;
+
+
+/***/ }),
+
+/***/ "38d9":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Fractal_vue_vue_type_style_index_0_id_1227a7e9_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("c18a");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Fractal_vue_vue_type_style_index_0_id_1227a7e9_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Fractal_vue_vue_type_style_index_0_id_1227a7e9_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
 
 
 /***/ }),
@@ -3611,6 +3604,13 @@ module.exports = isIndex;
 
 /***/ }),
 
+/***/ "c18a":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "c2b6":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4584,12 +4584,12 @@ if (typeof window !== 'undefined') {
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"63998987-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormLoader.vue?vue&type=template&id=30a62196&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"63998987-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Fractal.vue?vue&type=template&id=1227a7e9&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('FieldContainer',{attrs:{"schema":_vm.schema,"value":_vm.formData},on:{"input":function($event){return _vm.updateFormData($event)}}})}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/FormLoader.vue?vue&type=template&id=30a62196&scoped=true&
+// CONCATENATED MODULE: ./src/components/Fractal.vue?vue&type=template&id=1227a7e9&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.keys.js
 var es_object_keys = __webpack_require__("b64b");
@@ -5194,7 +5194,7 @@ var FieldContainer_component = normalizeComponent(
 var cloneDeep = __webpack_require__("0644");
 var cloneDeep_default = /*#__PURE__*/__webpack_require__.n(cloneDeep);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormLoader.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Fractal.vue?vue&type=script&lang=js&
 
 //
 //
@@ -5283,8 +5283,8 @@ var cloneDeep_default = /*#__PURE__*/__webpack_require__.n(cloneDeep);
 //   }
 // }
 
-/* harmony default export */ var FormLoadervue_type_script_lang_js_ = ({
-  name: 'FormLoader',
+/* harmony default export */ var Fractalvue_type_script_lang_js_ = ({
+  name: 'Fractal',
   components: {
     FieldContainer: FieldContainer
   },
@@ -5310,6 +5310,7 @@ var cloneDeep_default = /*#__PURE__*/__webpack_require__.n(cloneDeep);
   },
   created: function created() {
     this.prepareData();
+    this.$emit('input', this.formData);
   },
   computed: {// prettySchema() {
     //   return JSON.stringify(this.schema, null, 2);  
@@ -5377,12 +5378,12 @@ var cloneDeep_default = /*#__PURE__*/__webpack_require__.n(cloneDeep);
     }
   }
 });
-// CONCATENATED MODULE: ./src/components/FormLoader.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_FormLoadervue_type_script_lang_js_ = (FormLoadervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/FormLoader.vue?vue&type=style&index=0&id=30a62196&scoped=true&lang=css&
-var FormLoadervue_type_style_index_0_id_30a62196_scoped_true_lang_css_ = __webpack_require__("1939");
+// CONCATENATED MODULE: ./src/components/Fractal.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_Fractalvue_type_script_lang_js_ = (Fractalvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/components/Fractal.vue?vue&type=style&index=0&id=1227a7e9&scoped=true&lang=css&
+var Fractalvue_type_style_index_0_id_1227a7e9_scoped_true_lang_css_ = __webpack_require__("38d9");
 
-// CONCATENATED MODULE: ./src/components/FormLoader.vue
+// CONCATENATED MODULE: ./src/components/Fractal.vue
 
 
 
@@ -5391,38 +5392,38 @@ var FormLoadervue_type_style_index_0_id_30a62196_scoped_true_lang_css_ = __webpa
 
 /* normalize component */
 
-var FormLoader_component = normalizeComponent(
-  components_FormLoadervue_type_script_lang_js_,
+var Fractal_component = normalizeComponent(
+  components_Fractalvue_type_script_lang_js_,
   render,
   staticRenderFns,
   false,
   null,
-  "30a62196",
+  "1227a7e9",
   null
   
 )
 
-/* harmony default export */ var FormLoader = (FormLoader_component.exports);
+/* harmony default export */ var Fractal = (Fractal_component.exports);
 // CONCATENATED MODULE: ./src/main.js
 // Plugin export
 
  // import FieldContainer from './components/containers/FieldContainer.vue'
 // import * as fields from './components/fieldsLoader'
+// const Fractal = {
+// install(Vue) {
+//   const components = {FieldContainer, ...fields}
+//   Vue.component('FormLoader', FormLoader)
+//   function registerField(name) {
+//     Vue.component(name, components[name])
+//   }
+//   for (let component in components) {
+//     registerField(component)
+//   }
+// }  
+//   FormLoader
+// }
 
-var Fractal = {
-  // install(Vue) {
-  //   const components = {FieldContainer, ...fields}
-  //   Vue.component('FormLoader', FormLoader)
-  //   function registerField(name) {
-  //     Vue.component(name, components[name])
-  //   }
-  //   for (let component in components) {
-  //     registerField(component)
-  //   }
-  // }  
-  FormLoader: FormLoader
-};
-external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component('FormLoader', FormLoader);
+external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component('Fractal', Fractal);
 /* harmony default export */ var main = (Fractal);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 

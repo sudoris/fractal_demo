@@ -90,7 +90,7 @@ import _cloneDeep from 'lodash/cloneDeep'
 // }
 
 export default {
-  name: 'FormLoader',
+  name: 'Fractal',
   components: {   
     FieldContainer
   },
@@ -117,6 +117,7 @@ export default {
 
   created() {    
     this.prepareData()
+    this.$emit('input', this.formData)
   },
 
   computed: {
