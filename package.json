@@ -6,13 +6,13 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name Fractal src/main.js",
     "lint": "vue-cli-service lint"
-  },  
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "lodash": "^4.17.21",
     "vue": "^2.6.11"
   },
-  "main": "./dist/fracta.common.js",
+  "main": "./dist/Fractal.common.js",
   "files": [
     "dist/*",
     "src/*",
@@ -40,7 +40,7 @@
     ],
     "parserOptions": {
       "parser": "babel-eslint"
-    }    
+    }
   },
   "browserslist": [
     "> 1%",
