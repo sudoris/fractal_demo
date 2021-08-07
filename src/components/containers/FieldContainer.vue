@@ -1,9 +1,9 @@
 <template>
-  <div v-if="isReady" class="container">
-    <label class="section-title">{{schema.title}}</label>
+  <div v-if="isReady" class="f-container">
+    <label class="f-section-title">{{schema.title}}</label>
     <div :style="fieldWrapperStyles">
       <template v-for="(fieldSchema, key) in schema.properties">          
-        <div class="field" v-if="fieldSchema.items" :key="key">
+        <div class="f-field" v-if="fieldSchema.items" :key="key">
           <label>{{fieldSchema.title}}</label>
           <component 
             v-for="item in fieldSchema.items"
@@ -16,12 +16,11 @@
             :selfKey="item.value">
           </component>       
         </div>  
-        <div class="field" v-else :key="key">
+        <div class="f-field" v-else :key="key">
           <label v-if="fieldSchema.dataType !== 'object'">{{fieldSchema.title}}</label>
           <component         
             :is="getFieldName(fieldSchema)"           
-            :schema="fieldSchema" 
-            class="field" 
+            :schema="fieldSchema"             
             :value="value[key]"
             @input="emitChange($event, value, key)"
             :selfKey="key">
@@ -120,21 +119,20 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.container {
-  padding: 12px;
-  border: 1px solid red;
+<style>
+.f-container {
+  padding: 8px;
+  border: 1px solid grey;
 }
 
-.section-title {
+.f-section-title {
   font-size: 18px;
   font-weight: bolder;
   margin: 0 8px 8px 0;
   display: inline-block;
 }
 
-.field{
+.f-field{
   margin: 0 8px 8px 0;
 }
 </style>

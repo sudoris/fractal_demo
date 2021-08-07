@@ -142,7 +142,7 @@ export default {
       let schema = this.schema
 
       if (Object.keys(this.value).length > 0) {
-        data = _cloneDeep(this.value)   // use clone deep to prevent overwriting existing data
+        data = _cloneDeep(this.value)   // use clone deep so we're not mutating the original data object
       }
 
       let queue = [
