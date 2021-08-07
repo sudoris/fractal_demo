@@ -119,7 +119,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .f-container {
   padding: 8px;
   border: 1px solid grey;

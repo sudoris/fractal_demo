@@ -29,6 +29,11 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
+  "vue": {
+    "css": { 
+      "extract": false 
+    }
+  },
   "eslintConfig": {
     "root": true,
     "env": {
